@@ -1,0 +1,11 @@
+<div>
+  <p>
+  <table>
+    <thead><th ng-click="selectAll()"><span>Alle</span> </th></thead>
+    <tr ng-repeat="map in maps track by map.id">
+      <td><input type="checkbox" ng-model='map.selected'></td>
+      <td>{{ map.label }}</td>
+    </tr>
+  </table>
+
+</div>

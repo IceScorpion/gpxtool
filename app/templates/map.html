@@ -1,0 +1,33 @@
+<div>
+    <div class="mapContainer">
+
+        <div id="map0" class="mapContainer map0 gpxview:{{selectedMapsString()}}">
+            <noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript>
+        </div>
+            <div class="controlPanel small-2 left">
+                <map-type-selection></map-type-selection>
+                <div class="spacer"></div>
+                <map-selection></map-selection>
+                <button ng-click="updateMapWithSelection()">Update Map</button>
+                <div class="spacer"></div>
+                <profile-selection></profile-selection>
+            </div>
+            <div class="large-10 left">
+
+            </div>
+            <div id="map0_profiles" class="profiles">
+                <div id="map0_hp" class="no_x" ng-show="showHeightProfile">
+                    <noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript>
+                </div>
+                <div id="map0_sp" class="no_x" ng-show="showRiseProfile">
+                    <noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript>
+                </div>
+                <div id="map0_vp" ng-show="showSpeedProfile">
+                    <noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+
